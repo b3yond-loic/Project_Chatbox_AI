@@ -6,7 +6,7 @@ Une assistante IA avec un acces internet.
 ## Introduction
 
 Ce projet est un chatbot simple qui utilise l'intelligence artificielle pour répondre à vos questions. Il se connecte à l'API de **Google Gemini** pour générer des réponses en temps réel, offrant ainsi une expérience de conversation fluide et intelligente. Il peut aussi faire des recherches internet afin d'optenir des resultats à jour, et repondre à tout les genres de demandes.
-Ps: L'installation n'est pas simple, armez vous de patience.
+Ps: L'installation n'est pas simple, armez vous de patience et faites vous aider d'une IA.
 
 ---
 
