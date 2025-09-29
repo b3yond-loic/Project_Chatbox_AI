@@ -6,6 +6,7 @@ Une assistante IA avec un acces internet.
 ## Introduction
 
 Ce projet est un chatbot simple qui utilise l'intelligence artificielle pour répondre à vos questions. Il se connecte à l'API de **Google Gemini** pour générer des réponses en temps réel, offrant ainsi une expérience de conversation fluide et intelligente. Il peut aussi faire des recherches internet afin d'optenir des resultats à jour, et repondre à tout les genres de demandes.
+Ps: L'installation n'est pas simple, armez vous de patience.
 
 ---
 
@@ -79,6 +80,6 @@ Assurez-vous que les logiciels suivants sont installés sur votre machine :
 Ce projet a besoin d'un accès à Internet pour que l'IA puisse générer des réponses. Voici comment cela fonctionne :
 1.  **Votre Serveur Local** : Le fichier `serveur.js` que vous lancez est une API locale sur votre machine. Il agit comme un pont entre votre application de bureau et l'IA de Google.
 2.  **L'API de Google Gemini** : Lorsque votre serveur local reçoit un message, il envoie une requête via Internet à l'API de Google Gemini.
-3.  **Le Moteur de l'IA** : Le modèle **`gemini-1.5-flash`** (ou tout autre modèle que vous avez choisi) est hébergé sur les serveurs de Google. C'est ce modèle qui accède à Internet pour trouver des informations et formuler sa réponse, puis la renvoie à votre serveur local.
+3.  **Le Moteur de l'IA** : Le modèle **`gemini-2.5-flash`** (ou tout autre modèle que vous avez choisi) est hébergé sur les serveurs de Google. C'est ce modèle qui accède à Internet pour trouver des informations et formuler sa réponse, puis la renvoie à votre serveur local.
 
 Votre application n'a donc pas besoin d'une connexion Internet directe, car le serveur s'occupe de la communication avec l'API.
