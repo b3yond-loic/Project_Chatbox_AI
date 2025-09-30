@@ -1,0 +1,48 @@
+
+
+¤¤¤ README : Rapport sur l'état du projet ChatBox 
+Ce document explique l'état actuel du projet ChatBox, les raisons de son échec, et les pistes pour son avenir.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+État du projet
+Le projet ChatBox, développé pour servir d'assistant personnel, est actuellement en pause. Bien que le code source soit fonctionnel, 
+il a été impossible de garantir sa stabilité en raison de problèmes techniques liés à ses dépendances externes. Le projet est donc 
+considéré comme un échec technique dans sa version actuelle.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Cause de l'échec
+L'échec du projet est directement lié à l'utilisation d'API payantes et externes, notamment celles de Mistral AI et de Google Custom Search API.
+
+Les problèmes rencontrés étaient récurrents et ne pouvaient pas être résolus par des modifications du code :
+
+API Google : Le projet a rencontré des erreurs de permissions (403 Forbidden: Request had insufficient authentication scopes), rendant 
+l'utilisation de la recherche web impossible, malgré de multiples tentatives de configuration. Cela a montré que la dépendance à une 
+API externe introduit des points de défaillance liés aux autorisations et aux coûts.
+
+API Mistral : Le serveur a fréquemment renvoyé des erreurs de surcharge (429 Too Many Requests: Service tier capacity exceeded), ce 
+qui a rendu le service inutilisable pendant les périodes de forte demande. Ce problème, inhérent à la capacité des serveurs de l'API, 
+était incontrôlable et a compromis la fiabilité du projet.
+
+La dépendance à ces services a non seulement rendu le projet instable, mais a aussi révélé sa non-viabilité économique à long terme en 
+raison de leur modèle de tarification.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Potentiel et Viabilité future
+Malgré l'échec de la version actuelle, la vision du projet reste entièrement réalisable. La cause de l'échec n'est pas le concept en lui-même, 
+mais la méthode de son implémentation.
+
+Le projet peut devenir pleinement viable en se basant sur une approche différente :
+
+Utilisation d'un modèle d'IA local : En remplaçant l'API de Mistral par un réseau neuronal ou un modèle d'IA open source exécuté localement, 
+il est possible d'éliminer les erreurs de connexion et les coûts d'utilisation. Des solutions comme les modèles open source de la communauté 
+Hugging Face permettent d'exécuter un modèle d'IA directement sur la machine, garantissant la fiabilité et la confidentialité.
+
+Intégration locale de la recherche : La recherche web peut être implémentée via une solution locale et non dépendante d'une API payante, 
+ou simplement mise de côté si l'objectif principal est la conversation.
+
+En conclusion, le projet ChatBox est un succès d'apprentissage. Il a démontré les limites de la dépendance aux services externes et ouvre 
+la voie à une version plus robuste et autonome basée sur des technologies locales et open source.
+
