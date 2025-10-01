@@ -1,0 +1,65 @@
+
+
+***   Projet "Authentic" (Classification d'Images)
+Ce projet est la suite et la réorientation d'un effort de développement initialement dédié à un chatbot. 
+Il représente un pivot stratégique vers un domaine plus fiable et autonome, tirant 
+les leçons d'un échec précédent pour créer une nouvelle solution pertinente.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+***   Du ChatBot à la Vision par Ordinateur : Un échec comme tremplin
+Le projet initial de chatbot visait à fournir une assistance conversationnelle basée sur des API d'IA externes (Mistral) 
+et de recherche web (Google). Bien que le concept soit prometteur, son échec a révélé des vulnérabilités 
+critiques liées à la dépendance de services tiers :
+
+Instabilité et fiabilité : Des erreurs récurrentes, telles que les surcharges de capacité (Status 429) et les problèmes de 
+permissions (403 Forbidden), ont rendu le service imprévisible et inutilisable.
+
+Coûts et manque de contrôle : La dépendance à des API payantes a introduit des coûts récurrents et un manque total de contrôle 
+sur l'infrastructure et les performances.
+
+Ces leçons ont montré qu'un projet viable doit chercher l'autonomie et la fiabilité. Plutôt que d'abandonner, nous avons 
+décidé de recycler le projet et de capitaliser sur l'expérience acquise pour résoudre un problème différent, 
+mais tout aussi pertinent.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+***   L'Idée et le Concept
+Le nouveau projet, intitulé "Authentic", a pour but de développer une application capable de classifier des images en deux catégories : 
+photo réelle ou photo retouchée / générée par IA.
+
+Le concept est simple mais puissant :
+
+L'utilisateur télécharge une image.
+
+L'application analyse l'image.
+
+L'application renvoie un résultat clair : VRAI (photo réelle) ou FAUX (photo modifiée par IA).
+
+Ce projet s'attaque à un défi technologique de l'ère numérique, en répondant à un besoin croissant de vérification 
+de l'authenticité des contenus visuels.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+***   L'Approche Technique
+Pour éviter les écueils du passé, ce projet adoptera une approche technique axée sur le développement local et l'open source.
+
+Le cœur de l'application sera un modèle d'IA de vision par ordinateur exécuté localement sur la machine de l'utilisateur 
+ou sur un serveur privé. Cela garantira les avantages suivants :
+
+Fiabilité : Aucune dépendance à une API externe, donc pas de problèmes de surcharges ni de pannes.
+
+Autonomie : Contrôle total sur les performances du modèle.
+
+Absence de coûts : Pas de frais récurrents pour chaque requête API.
+
+Les technologies envisagées pour ce projet incluent l'utilisation d'un serveur Node.js (comme dans le projet initial) et 
+l'intégration d'un modèle d'IA open source. Le modèle lui-même pourrait être entraîné ou récupéré 
+sur des plateformes comme Hugging Face, puis exécuté localement à l'aide de frameworks comme TensorFlow.js ou PyTorch.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+***   Conclusion et Perspectives d'Avenir
+Cet échec n'était pas la fin, mais une étape vers une meilleure solution. Le projet "Authentic" est la preuve que chaque 
+défaite peut être transformée en une opportunité d'apprentissage et de croissance. Il représente une nouvelle 
+approche pour construire une application robuste, autonome, et résolvant un problème concret.
